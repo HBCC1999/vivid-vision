@@ -1,5 +1,5 @@
 import os, shutil, json
-import sys
+import sys, argparse
 
 def get_install_dir():
     return os.path.join(os.getenv('LOCALAPPDATA'), 'VividVision')
@@ -30,4 +30,10 @@ def save_script_in_startup(notification_intensity="silent", interval=20*60):
 
 
 if __name__ == "__main__":
-    save_script_in_startup()
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument("--intensity",default="silent")
+    parser.add_argument("--interval",type=int ,default=1200)
+    args = parser.parse_args()
+
+    save_script_in_startup(args.intensity, args.interval)
