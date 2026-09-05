@@ -6,3 +6,6 @@ The program comes with a compiled installation wizard (VividVisionSetup.exe), th
 
 # Installation
 Since most users wont bother with windows defender, an easier way is to copy the exe in dist/ and paste it in to your startup directory (Locate by C:\Users\UserName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup or  by running shell:script command in Win + R). I really wanted this project to be very straight-forward, but Windows Defender's coming in the way.
+
+# Contribution
+You can contribute to this project if you think you can avoid that Windows Defender problem, or improve the project's dimension.
